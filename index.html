@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty WIKI</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <style>
+        img {
+            display: block;
+            margin-top: 10px;
+        }
+
+        .name {
+            margin: 20px;
+        }
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        ul li {
+            list-style: none;
+            font-size: 1.5em
+        }
+
+        #form {
+            margin: 0% 30% 0% 4%;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div id="form">
+            <input type="text" v-model="name    ">
+            <button v-on:click="search" >Search</button>
+        </div>
+        <ul>
+            <li class="name" v-for="personagem in personagens">
+                {{ personagem.name }}
+                <img :src="personagem.image" alt="">
+                <hr>
+            </li>
+        </ul>   
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
