@@ -5,45 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rick and Morty WIKI</title>
     <script src="https://unpkg.com/vue@next"></script>
-    <style>
-        img {
-            display: block;
-            margin-top: 10px;
-        }
-
-        .name {
-            margin: 20px;
-        }
-
-        ul {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        ul li {
-            list-style: none;
-            font-size: 1.5em
-        }
-
-        #form {
-            margin: 0% 30% 0% 4%;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="app">
         <div id="form">
-            <input type="text" v-model="name    ">
+            <input type="text" v-model="name">
             <button v-on:click="search" >Search</button>
         </div>
-        <ul>
+        <!-- <ul>
             <li class="name" v-for="personagem in personagens">
                 {{ personagem.name }}
                 <img :src="personagem.image" alt="">
+                <span>{{ personagem.origin.name }}</span>
                 <hr>
             </li>
-        </ul>   
+        </ul>    -->
+
+        <div class="content">
+            <div class="card" v-for="personagem in personagens">
+                <div class="topCard">  
+                    <h2 class="name">{{personagem.name}}</h2>
+                    <h3 class="id"> id: {{personagem.id}}</h3>
+                    <span class="status">{{personagem.status}} - {{personagem.species}} ({{personagem.gender}})</span>
+                </div>
+                <div class="midCard">
+                    <img :src="personagem.image" alt="">
+                </div>
+                <div class="bottomCard">
+                    <div class="section">
+                        <span>Origin: </span>
+                        <a class="origin" target="_blank">{{personagem.origin.name}}</a>
+                    </div>
+                    <div class="section">
+                        <span>Last place: </span>
+                        <a class="lastPlace" target="_blank">{{personagem.location.name}}</a>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
     </div>
     <script src="./app.js"></script>
 </body>
