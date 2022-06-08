@@ -1,5 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+
 body {
     background-color: #1b1c3c;
+}
+
+h1 {
+    font-family: 'Rubik Glitch', cursive;
+    font-weight:normal;
+    text-align: center;
+    color: aqua;
+}
+
+h3 {
+    font-family: 'Rubik Glitch', cursive;
+    font-weight: lighter;
+    text-align: center;
+    color:aquamarine;
 }
 
 .content {
