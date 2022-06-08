@@ -4,14 +4,14 @@ body {
     background-color: #1b1c3c;
 }
 
-h1 {
+.title {
     font-family: 'Rubik Glitch', cursive;
     font-weight:normal;
     text-align: center;
     color: aqua;
 }
 
-h3 {
+.subtitle {
     font-family: 'Rubik Glitch', cursive;
     font-weight: lighter;
     text-align: center;
