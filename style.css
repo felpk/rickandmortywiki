@@ -1,20 +1,19 @@
 body {
-    background-color: black;
+    background-color: #1b1c3c;
 }
 
 .content {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 1fr;
+    display: flex;
     gap: 0px 10px;
+    flex-wrap: wrap;
 
 }
 
 .card {
     text-align: center;
-    background-color: rgb(12, 88, 24);
+    background-color: #63be4f;
     margin: 1em;
-    border-radius: 10px;
+    border-radius: 1rem;
 }
 
 div#form {
@@ -31,4 +30,8 @@ button {
     border-color: rgb(75,210,35);
     background-color: rgb(75,210,35);
     color: white;
+}
+
+img {
+    margin: 20px;
 }
