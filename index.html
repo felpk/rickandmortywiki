@@ -9,12 +9,13 @@
 </head>
 <body>
     <div id="app">
-        <section class="title">
-            <h1 class="title">Rick And Morty WIKI</h1>
+        <section class="mainTitle">
+            <img src="Rick-And-Morty-Logo.png">
+            <h1 class="title">WIKI</h1>
             <h3 class="subtitle">Using API's  &#x1F609</h3>
         </section>
         <div id="form">
-            <input type="text" v-model="name">
+            <input type="text" v-model="name" placeholder="Search for a character">
             <button v-on:click="search" >Search</button>
         </div>
         <!-- <ul>

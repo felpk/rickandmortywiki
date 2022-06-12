@@ -1,7 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
 
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+
+}
+
 body {
-    background-color: #1b1c3c;
+    background-image: url(wp1822750-rick-and-morty-wallpapers.png);
+    background-attachment: fixed;
+}
+
+.mainTitle {
+    justify-content: center;
+    margin: auto;
+    color: #1b3c26 ;
+    box-shadow: 0px 5px 20px;
+
 }
 
 .title {
@@ -20,9 +36,12 @@ body {
 
 .content {
     display: flex;
-    gap: 0px 10px;
     flex-wrap: wrap;
-
+    flex: 1 1 300px;
+    gap: 0px 10px;
+    align-items: center;
+    justify-content: center;
+    columns: 300px 3;
 }
 
 .card {
@@ -30,7 +49,25 @@ body {
     background-color: #63be4f;
     margin: 1em;
     border-radius: 1rem;
+    box-shadow: 3px 15px 15px 5px #000000;
 }
+
+.card img {
+    margin: 10px;
+    border-radius: 3px;
+}
+
+.card:hover{
+    text-align: center;
+    background-color: #328a1f;
+    margin: 1em;
+    border-radius: 1rem;
+    box-shadow: 20px 15px 5px 5px #000000;
+    transition: 0.2s;
+    filter: brightness(95%);
+
+}
+
 
 div#form {
     margin: auto;
@@ -48,6 +85,10 @@ button {
     color: white;
 }
 
-img {
-    margin: 20px;
+.mainTitle img {
+    display: flex;
+    max-width: 300px;
+    max-height: 150px;
+    margin: auto;
+    margin-bottom: -30px;
 }
