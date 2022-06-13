@@ -16,7 +16,6 @@ body {
     justify-content: center;
     margin: auto;
     color: #1b3c26 ;
-    box-shadow: 0px 5px 20px;
 
 }
 
@@ -68,21 +67,30 @@ body {
 
 }
 
+.inputSearch {
+    width: 300px;
+    height: 30px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+
 
 div#form {
     margin: auto;
     margin-top: 5%;
     margin-bottom: 5%;
     width: fit-content;
-    box-shadow: 3px 1px 5px rgb(75,210,35);
     border-color: rgb(75,210,35);
 }
 
-button {
-    border-radius: 2px;
+.buttonSearch {
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
     border-color: rgb(75,210,35);
     background-color: rgb(75,210,35);
     color: white;
+    height: 30px;
 }
 
 .mainTitle img {

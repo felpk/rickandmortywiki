@@ -15,6 +15,7 @@ const MyApp = {
             fetch(`https://rickandmortyapi.com/api/character?name=${this.name}`)
                 .then((response) => response.json())
                 .then((data) => (this.personagens = data.results))
+
         }
     }
 }
